@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title> Website</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="html"href="demo(1).html">
+   <image src="">
+   <extend GUI.java>
+   <style>
+   *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   
+   }
+   .container
+   {
+   width:100%;
+   height:100vh;
+   display:flex;
+   background:#ffff;
+   align-items:center;
+   justify-content:center;
+   position:;
+   }
+   html,body{
+   height: 100%;
+   }
+   header
+   {
+   position: absolute;
+   top:0;
+   left:0;
+   width:100%;
+   padding: 30px 100px;
+   display:flex;
+   justify-content: space-between;
+   align-items:center;
+   z-index:1000;
+   }
+   header .logo
+   {
+   color:#ffff;
+   font-width:700;
+   text-decoration: none;
+   font-size: 2em;
+   text-transform: uppercase;
+   letter-spacing:2px;
+   
+   }
+   header ul
+   {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+   header ul li
+   {
+   list-style: none;
+   margin-left:20px;
+   
+   }
+   header ul li a
+   {
+   text-decoratiob: none;
+   padding: 6px 15px;
+   color:#ffff;
+   border-radius:20px;
+   }
+   header ul li a: hover,
+   header ul li a.active
+   {
+   background: #ffff;
+   color : #141519;
+   }
+   body{
+   display:grid;
+   place-item: center;
+   background:#131419;
+   }
+   .clock{
+   background: #131419;
+   height : 100px;
+   width: 500px;
+   line-height:120px;
+   text-align:Center;
+   padding: 0 5px;
+   box-shadow:-3px -3px 7px rgba(255,255,255,0.5),
+                -3px -3px 10px rgba(0,0,0,0.5);
+   background-position:center;
+   }
+   .clock .display{
+   font-size:90px;
+   color:cyan;
+   letter-spacing: 7px;
+   font-family:'Obitron', san-serif;
+   }
+   
+   .main{
+   width:100%;
+   background:linear-gradient(to top, rgba(255,255,241,0.5)50%,rgba(0,0,0,0,5)50%),url(Lov.jpeg));
+   background-position:center;
+   background-size:cover;
+   height:109vh;
+   }
+   .nav{
+   display: flex;
+   }
+   #btn
+   {
+   text-decoration:none;
+   display:inline-block;
+   padding:8px 30px;
+   border-radius:40px;
+   background:white;
+   colore:black;
+   font-size:1.5em;
+   z-index:9;
+   transform:translate(100px);
+   
+   }
+   </style>
+   
+</head>
+<body>
+<header>
+ <a href="a" class="logo">Poems</a>
+ <ul>
+ <li><a href="My website.html" class="active" >Home</a></li>
+ <li><a href="clock.html" >Clock</a></li>
+ <li><a href="calculator.html" >Calculator</a></li>
+ <li><a href="#" >Settings</a></li>
+ </ul>
+ </header>
+<div class="container">
+<img src="Love.jpg"></div>
+
+<form  action="type" name = " form"></form>
+<div class ="clock">
+<div class="display">13:28:47 PM</div>
+</div>
+<script>
+  setInterval(function(){
+    const clock= document.querySelector(".display");
+    let time = new Date();
+    let sec = time.getSeconds();
+    let min = time.getMinutes();
+    let hr = time.getHours();
+    let day = 'AM';
+    if(hr>12 ){
+        day= 'PM';
+        hr = hr - 12;
+    }else{
+    day= 'AM'
+    }
+    if (sec < 10 ){
+        sec = '0' + sec;
+    }
+    if ( min < 10 ){
+        min = '0' + min;
+    }
+    if (hr < 10 ){
+        hr = '0' + hr;
+    }
+    clock.textContent = hr +':'+min+':'+sec+ ' '+day;
+   
+    });
+</script>
+
+
+</body>
+<a>
+</extend>
+</image>
+</body>
+</html>

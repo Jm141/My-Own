@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title> Website</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="html"href="demo(1).html">
+   <style >
+   *{
+   margin:0;
+   padding:0;
+   user-select:none;
+   box-sizing:border-box;
+   scroll-behavior:smooth;
+   
+   }
+   .container
+   {
+   width:100%;
+   height:100vh;
+   display:flex;
+   background:#ffff;
+   align-items:70px;
+   justify-content:center;
+   position:;
+   
+   }
+   html,body{
+   height:100%;
+   }
+   body{
+   display:grid;
+   place-items:50px;
+   background:#131419;
+   }
+   header
+   {
+   position: absolute;
+   top:0;
+   left:0;
+   width:100%;
+   padding: 30px 100px;
+   display:flex;
+   justify-content: space-between;
+   align-items:center;
+   z-index:1000;
+   }
+   header .logo
+   {
+   color:#ffff;
+   font-width:1000;
+   text-decoration: none;
+   font-size: 2em;
+   text-transform: uppercase;
+   letter-spacing:2px;
+   
+   }
+   header ul
+   {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   }
+   header ul li
+   {
+   list-style: none;
+   margin-left:20px;
+   
+   }
+   header ul li a
+   {
+   text-decoratiob: none;
+   padding: 6px 15px;
+   color:#ffff;
+   border-radius:20px;
+   }
+   header ul li a: hover,
+   header ul li a.active
+   {
+   background: #ffff;
+   color : #141519;
+   }
+   section
+   {
+   position:relative;
+   width:100%;
+   height:100vh;
+   padding:100px;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   
+   
+   }
+   section img
+   {
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   object-fit:cover;
+   }
+   
+   #text
+   {
+   position:absolute;
+   color:#fff;
+   wite-space:nonwrap;
+   font-size:700em;
+   font-size:1.5em;
+   z-index:9;
+   }
+   #btn
+   {
+   text-decoration:none;
+   display:inline-block;
+   padding:8px 30px;
+   border-radius:40px;
+   background:white;
+   colore:black;
+   font-size:1.5em;
+   z-index:9;
+   transform:translate(100px);
+   
+   }
+   section::before
+   {
+   content:'';
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:100px;
+   background: linear-gradient(to top,#1c0522,transparent);
+   z-index:1000;
+   }
+   
+   .sec
+   {
+   position:relative;
+   padding:100px;
+   background:#1c0522;
+   }
+   
+   .calculator{
+   width:340px;
+   height:510px;
+   background:#141519;
+   padding:40px 10px;
+   border-radius:10px;
+   box-shadow:-3px -3px 7px#ffffff73,2px 2px 5px rgba(94,104,121,0.288);
+   
+   
+   }
+   
+   form.result{
+   height:80px:;
+   width:100%;
+   background:white;
+   box-shadow:inset -3px -3px 7px#ffffff73,
+   inset 2px 2px 5px rgba(94,104,121,0.288);
+   }
+   .result input{
+   width:310px;
+   height:57px;
+   align:cente;
+   background:#ffftf;
+   border-style:solid;
+   border-color:#c85ae0;
+   border-radius:7px;
+   outline:none;
+   font-type:Bold;
+   font-size:60px;
+   padding:20px 20px;
+   text-align:right;
+   font-weight:bold;
+   color:#141519;
+   pointer-events:none;
+   font-family:'Obitron',san-serif;
+   box-shadow:-3px -3px 7px rgba(255,255,255,0.5),
+   -3px -3px 10px rgba(0,0,0,0.5);
+   background-position:center;
+   }
+   form .buttons{
+   text-align:center;
+   padding:30px 0 0 0 ;
+   }
+   
+   .buttons input[type="button"]{
+   height:56px;
+   width:56px;
+   font-size:29px;
+   font-color:green;
+   margin:4px;
+   border:none;
+   border-radius:5px;
+   outline:none;
+   background:#fff;
+   border-radius:none;
+   color:#141519;
+   box-shadow:-3px -3px 7px rgba(255,255,255,0.5),
+   -3px -3px 10px rgba(0,0,0,0.5);
+   background-position:center;
+   }
+   .buttons input.equal{
+   width:125px;
+   }
+  form .clear{
+  text-align:center;
+  padding:30px 0 0 0 ;
+   
+   }
+   
+   
+   
+   .clear input[type="button"]{
+   width:260px;
+   font-size:45px;
+   font-color:cyan;
+   background:white;
+   margin-right:20px;
+   }
+   #btn
+   {
+   text-decoration:none;
+   display:inline-block;
+   padding:8px 30px;
+   border-radius:40px;
+   background:cyan;
+   colore:black;
+   font-size:1.5em;
+   z-index:9;
+   transform:translate(100px);
+   
+   }
+   
+   
+   
+   
+   </style>
+   </head>
+   <body background="art.jpg">
+   <section>
+   <img src="Love.jpg" id="love">
+   <h2 id="text">Calculator</h2>
+   <a href="#sec" id="btn" >Go</a>
+   </section>
+   
+   <header>
+   <a href="a" class="logo">Poems</a>
+   <ul>
+   <li><a href="My website.html" class="active">Home</a></li>
+   <li><a href="blog.html">To-Do List</a></li>
+   <li><a href="calculator.html">Calculator</a></li>
+   <li><a href="clock.html">Clock</a></li>
+   </ul>
+   </header>
+   <div class="sec" id="sec">
+   <div class ="calculator">
+   <form action ="#" name ="form">
+   <div class ="result">
+   <input type = "text" name= "disp" id="disp">
+   </div>
+<font color="white" >  <div  class="buttons">  </font>
+      <div class="row"">
+      <input type="button" value="AC" name="vAC" onclick="disp.value=''">
+      <input type="button" value="DE" name="vDE" onclick="disp.value = disp.value.toString().slice(0,-1)">
+      <input type="button" value="." name="v." onclick="disp.value += '.'">
+      <input type= "button" value="/" name="div" onclick="val(div.value)">
+      </div>
+   <div class= " rows">
+   <input type="button" value="7" name ="v7" onclick="val(v7.value)">
+   <input type="button" value="8" name ="v8" onclick="val(v8.value)">
+   <input type="button" value="9" name ="v9" onclick="val(v9.value)">
+   <input type="button" value="+" name ="add"onclick="val(add.value)">
+   </div>
+   <div class= " rows">
+   <input type="button" value="4" name ="v4"onclick="val(v4.value)">
+   <input type="button" value="5" name ="v5"onclick="val(v5.value)">
+   <input type="button" value="6" name ="v6"onclick="val(v6.value)">
+   <input type="button" value="-" name ="sub"onclick="val(sub.value)">
+   </div>
+   <div class= " rows">
+   <input type="button" value="1" name ="v1"onclick="val(v1.value)">
+   <input type="button" value="2" name ="v2"onclick="val(v2.value)">
+   <input type="button" value="3" name ="v3"onclick="val(v3.value)">
+   <input type="button" value="*" name ="mul"onclick="val(mul.value)">
+   </div>
+   <div class= " rows">
+   <input type="button" value="0" name ="v0"onclick="val(v0.value)">
+   <input type="button" value="00" name ="v00"onclick="val(v00.value)">
+   <input type="button" value="="  class="equal" name ="veql"onclick="calculate()">
+   </div>
+   
+   <div class="clear">
+   
+   </div>
+   </div>
+   </form>
+   </div>
+   </div>
+  
+   <script>
+   
+   function val(result){
+   form.disp.value = form.disp.value + result;
+   }
+   function calculate(){
+   if(form.disp.value == ""){
+   alert("Please enter numbers");
+   }else{
+   form.disp.value = eval(form.disp.value);
+   }
+   }
+   var btn=form.vdel;
+   btn.addEventListener('dblclick', function(){
+   form.disp.value="";
+   });
+   </script>
+  
+   
+   <script>
+   
+   
+   
+   </script>
+   
+   </body>
+   </html>
+   
+   
+   
