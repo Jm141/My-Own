@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+*{
+margine:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+body{
+min-height:100vh;
+background:linear-gradient(#2b1855,#7597de);
+}
+header
+{
+position: absolute;
+border-bottom:solid;
+top:0;
+left:0;
+width:100%;
+padding: 30px 100px;
+display:flex;
+justify-content: space-between;
+align-items:center;
+z-index:1000;
+}
+header .log{
+padding:10px;
+height:1px;
+width:10px;
+z-index:100;
+}
+header .logo
+{
+color:#ffff;
+font-width:700;
+text-decoration: none;
+text-style:bold;
+border:solid;
+border-radius:4px;
+background:black;
+border-color:black;
+font-size: 4em;
+text-transform: uppercase;
+text-align:left;
+letter-spacing:2px;
+
+}
+
+header ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header ul li
+{
+list-style: none;
+margin-left:20px;
+
+}
+header ul li a
+{
+text-decoratiob: none;
+padding: 6px 15px;
+color:#ffff;
+border-radius:20px;
+}
+header ul li a: hover,
+header ul li a.active
+{
+background: cyan;
+color : #141519;
+}
+section
+{
+position:relative;
+width:100%;
+height:100vh;
+padding:100px;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(to top,#1c0522,transparent);
+
+}
+section img
+{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+background: linear-gradient(to top,#1c0522,transparent);
+
+}
+
+#text
+{
+position:absolute;
+color:#fff;
+wite-space:nonwrap;
+font-size:700em;
+font-size:1.5em;
+z-index:9;
+}
+#btn
+{
+text-align:left;
+text-decoration:none;
+display:10px 50px;
+padding:8px 30px;
+border-style:solid;
+border-color:black;
+border-radius:40px;
+background:#fff;
+colore:black;
+font-size:1.5em;
+z-index:9;
+transform:translate(100px);
+
+}
+#btn:hover
+{
+background:#9894e0;
+}
+section::before
+{
+content:'';
+position:absolute;
+bottom:0;
+width:100%;
+height:100px;
+background: linear-gradient(to top,#1c0522,transparent);
+z-index:1000;
+}
+.par{
+display:relative;
+position:relativ7e;
+padding:100px;
+background:url("Love.jpg");
+justify-content:left;
+text-align:justify;
+line-spacing:3px;
+align-items:center;
+}
+.container{
+width:100%;
+min-height:100vh;
+background:2b1855,#7597de;
+padding:10px;
+}
+.todo-app{
+border-style:solid;
+border-size:3px;
+border-color:white;
+width: 100%;
+max-width: 540px;
+background:linear-gradient(#2b1855,#7597de);
+margin: 100px auto 20px;
+padding: 40px 30px 70px;
+border-radius: 10px;
+}
+todo-app h2{
+color: #002765;
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+font-weight:18px;
+} 
+h2.img{
+width: 10px;
+height:10px;
+margin-left: 10px;
+position:center;
+}
+.row{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:#edeef9;
+border-radius:30px;
+padding-left:20px;
+margin-bottom:25px;
+
+}
+input{
+flex:1;
+border:none;
+outline:none;
+background:transparent;
+padding:10px;
+font-weight:14px;
+color:#14151;
+}
+button{
+border: none;
+outline: none;
+padding: 10px 30px;
+background: #141915;
+color: #fff;
+font-size: 16px;
+cursor: pointer;
+border-radius: 40px;
+}
+ul.list li{
+list-style: none;
+font-size: 17px;
+margin:0 auto 3px 10px;
+padding: 12px 8px 12px 50px;
+user-select: none;
+cursor: pointer;
+position:relative;
+background:#9894e0;
+border-style:dashed;
+border-size:2px;
+border-radius:5px;
+
+    
+   
+}
+ul.list li::before{
+content: "";
+position: absolute;
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background-image: url(U.png);
+background-size:cover;
+background-position:center;
+top:7px;
+left:8px;
+}
+ul.list li.checked{
+color: #555;
+text-decoration: line-through;
+}
+ul.list li.completed::before{
+background-image: url(check.png);
+}
+ul.list li span{
+position:absolute;
+right: 0;
+top: 5px;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color:#555;
+line-height:40px;
+text-align:center;
+}
+ul.list li span:hover{
+background:#edeef0;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+    }
+
+
+    ul.list li button {
+    position:absolute;
+    right: 10px;
+    top: 5px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    background: #ff6347;
+    color: #fff;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align:center;
+    }
+    
+ 
+    ul.list li button:hover {
+    background: #ff4d3c;
+    }
+    
+    
+    /* Rest of the existing styles... */
+    
+    
+</style>
+
+
+<header>
+<img src="#" class="log">
+ <a href="a" class="logo" id="log">To Do List</a>
+<ul>
+<li><a href="My website.html" class="active">Home</a></li>
+<li><a href="blog.html">To-Do List</a></li>
+<li><a href="calculator.html">Calculator</a></li>
+<li><a href="clock.html">Clock</a></li>
+</ul>
+</header>
+<section>
+<img src="Love.jpg" id="love">
+ <h1 id="text"></h1>
+ <a href="#input-box" id="btn" >To Do List</a>
+</section>
+<body>
+<div class="container">
+<div class="todo-app">
+<h2>To-Do List<img class="img" src="Bking.png" ></h2>
+<div class="row">
+<input type="text" id="input-box" placeholder="Text here">
+<button onclick="addTask()">Add</button>
+</div>
+<ul  class="list" id="list-container">
+
+
+</ul>
+</div>
+<a href="#love" id="btn" class="btn">back</a>
+
+
+</div>
+<script>
+
+        function addTask() {
+            var taskInput = document.getElementById("input-box");
+            var taskList = document.getElementById("list-container");
+
+            if (taskInput.value !== "") {
+                var taskItem = document.createElement("li");
+                var taskText = document.createTextNode(taskInput.value);
+
+                taskItem.appendChild(taskText);
+                taskList.appendChild(taskItem);
+
+                
+                var deleteButton = document.createElement("button");
+                deleteButton.innerHTML = "Delete";
+                taskItem.appendChild(deleteButton);
+
+                
+                deleteButton.addEventListener("click", function () {
+                    taskList.removeChild(taskItem);
+                });
+
+                
+                taskItem.addEventListener("click", function () {
+                    taskItem.classList.toggle("completed");
+                });
+
+                taskInput.value = "";
+            }
+        }
+
+        var addButton = document.getElementById("add-button");
+        addButton.addEventListener("click", addTask);
+
+        // Handle adding a new task when the Enter key is pressed in the input-box
+        var inputBox = document.getElementById("input-box");
+        inputBox.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                addTask();
+                
+                
+            }
+            
+        });
+
+</script>
+
+</body>
+
+
+</html>
+</html>
