@@ -171,7 +171,7 @@ logButton.addEventListener("click", function() {
     const userIndex = validUsers.findIndex(user => user.username === userInput);
 
     if (userIndex !== -1 && validUsers[userIndex].password === passInput) {
-        window.location.href = "My website.html";
+        window.location.assign("My website.html");
     } else {
         if (userInput === "" || passInput === "") {
             alert("Error: Username or password cannot be empty");
