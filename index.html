@@ -157,26 +157,30 @@
          <p1>Don't have an account? <a href="signup.html">Sign Here</a></p1>
       <script>
       const logButton = document.getElementById("login");
-      
-      logButton.addEventListener("click", function() {
-      const userInput = document.getElementById("username").value.toLowerCase();
-      const passInput = document.getElementById("password").value;
-      
-      // Define an array of valid username and password combinations
-      const validUsers = ["jm123", "user2", "user3"];
-      const validPasswords = ["love123", "pass2", "pass3"];
-      
-      // Check if the userInput and passInput are in the validUsers and validPasswords arrays
-      const isValid = validUsers.includes(userInput) && validPasswords[validUsers.indexOf(userInput)] === passInput;
-      
-      if (userInput === "" || passInput === "") {
-      alert("Error: Username or password cannot be empty");
-      } else if (isValid) {
-      window.location.href = "Home.html";
-      } else {
-      alert("Error: Username or password is incorrect");
-      }
-      });
+
+logButton.addEventListener("click", function() {
+    const userInput = document.getElementById("username").value.toLowerCase();
+    const passInput = document.getElementById("password").value;
+
+    // Define an array of valid username and password combinations
+    const validUsers = [
+        {username: "jm123", password: "love123"}
+    ];
+
+    // Find the index of the userInput in the validUsers array
+    const userIndex = validUsers.findIndex(user => user.username === userInput);
+
+    if (userIndex !== -1 && validUsers[userIndex].password === passInput) {
+        window.location.href = "My website.html";
+    } else {
+        if (userInput === "" || passInput === "") {
+            alert("Error: Username or password cannot be empty");
+        } else {
+            alert("Error: Username or password is incorrect");
+        }
+    }
+});
+
       </script>
       
       
